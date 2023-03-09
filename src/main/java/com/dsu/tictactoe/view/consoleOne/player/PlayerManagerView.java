@@ -8,12 +8,10 @@ import com.dsu.tictactoe.model.player.Player;
 import com.dsu.tictactoe.model.player.PlayerError;
 import com.dsu.tictactoe.model.player.PlayerType;
 import com.dsu.tictactoe.utils.Console;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerManagerView;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerManagerView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerView;
 
 public class PlayerManagerView implements IPlayerManagerView {
-
-    
 
     @Override
     public Player getNewPlayer(PlayerError playerError, Player newPlayer, PlayerType[] playerTypevalues) {
@@ -43,6 +41,7 @@ public class PlayerManagerView implements IPlayerManagerView {
         return player;
     }
 
+    @Override
     public List<Player> getNewGamePlayers(List<Player> allPlayers, int numbePlayers) {
         ArrayList<Player> allNewGamePlayers = getArrayListPlayers(allPlayers);
         List<Player> selectedPlayers = new LinkedList<>();
@@ -77,6 +76,7 @@ public class PlayerManagerView implements IPlayerManagerView {
         }
     }
 
+    @Override
     public void showAllPlayers(List<Player> players) {
         Console.printTitle("Registered players");
         printAllPlayers(players);

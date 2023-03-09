@@ -2,7 +2,7 @@ package com.dsu.tictactoe.view.consoleOne;
 
 import com.dsu.tictactoe.model.Result;
 import com.dsu.tictactoe.utils.Console;
-import com.dsu.tictactoe.view.viewFactory.ITicTacToeView;
+import com.dsu.tictactoe.view.interfaces.ITicTacToeView;
 
 public class TicTacToeView implements ITicTacToeView {
 

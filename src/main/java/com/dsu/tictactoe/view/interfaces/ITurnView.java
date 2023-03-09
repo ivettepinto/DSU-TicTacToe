@@ -1,4 +1,4 @@
-package com.dsu.tictactoe.view.viewFactory;
+package com.dsu.tictactoe.view.interfaces;
 
 import com.dsu.tictactoe.model.board.Mark;
 import com.dsu.tictactoe.model.board.PutMarkError;

@@ -4,7 +4,7 @@ import com.dsu.tictactoe.model.board.Coordinate;
 import com.dsu.tictactoe.model.board.PutMarkError;
 import com.dsu.tictactoe.model.player.Player;
 import com.dsu.tictactoe.utils.Console;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerView;
 
 public class ComputerPlayerView implements IPlayerView {
 

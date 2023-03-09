@@ -7,9 +7,11 @@ import com.dsu.tictactoe.view.consoleTwo.TurnView;
 import com.dsu.tictactoe.view.consoleTwo.player.ComputerPlayerView;
 import com.dsu.tictactoe.view.consoleTwo.player.HumanPlayerView;
 import com.dsu.tictactoe.view.consoleTwo.player.PlayerManagerView;
-import com.dsu.tictactoe.view.consoleTwo.player.PlayerViewFactory;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerManagerView;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerView;
+import com.dsu.tictactoe.view.interfaces.IBoardView;
+import com.dsu.tictactoe.view.interfaces.ITicTacToeView;
+import com.dsu.tictactoe.view.interfaces.ITurnView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerManagerView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerView;
 
 public class ConsoleTwo implements ViewAbstractFatory {
 

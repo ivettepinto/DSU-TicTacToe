@@ -1,4 +1,4 @@
-package com.dsu.tictactoe.view.viewFactory.player;
+package com.dsu.tictactoe.view.interfaces.player;
 
 import com.dsu.tictactoe.model.board.Coordinate;
 import com.dsu.tictactoe.model.board.PutMarkError;

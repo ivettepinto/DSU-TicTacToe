@@ -4,11 +4,14 @@ import com.dsu.tictactoe.model.player.PlayerType;
 import com.dsu.tictactoe.view.consoleOne.player.ComputerPlayerView;
 import com.dsu.tictactoe.view.consoleOne.player.HumanPlayerView;
 import com.dsu.tictactoe.view.consoleOne.player.PlayerManagerView;
+import com.dsu.tictactoe.view.interfaces.IBoardView;
+import com.dsu.tictactoe.view.interfaces.ITicTacToeView;
+import com.dsu.tictactoe.view.interfaces.ITurnView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerManagerView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerView;
 import com.dsu.tictactoe.view.consoleOne.BoardView;
 import com.dsu.tictactoe.view.consoleOne.TurnView;
 import com.dsu.tictactoe.view.consoleOne.TicTacToeView;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerManagerView;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerView;
 
 public class ConsoleOne implements ViewAbstractFatory {
 

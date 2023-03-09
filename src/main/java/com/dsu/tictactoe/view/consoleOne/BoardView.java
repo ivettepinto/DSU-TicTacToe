@@ -2,7 +2,7 @@ package com.dsu.tictactoe.view.consoleOne;
 
 import com.dsu.tictactoe.model.board.Mark;
 import com.dsu.tictactoe.utils.Console;
-import com.dsu.tictactoe.view.viewFactory.IBoardView;
+import com.dsu.tictactoe.view.interfaces.IBoardView;
 
 public class BoardView implements IBoardView {
 

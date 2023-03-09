@@ -1,8 +1,11 @@
 package com.dsu.tictactoe.view.viewFactory;
 
 import com.dsu.tictactoe.model.player.PlayerType;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerManagerView;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerView;
+import com.dsu.tictactoe.view.interfaces.IBoardView;
+import com.dsu.tictactoe.view.interfaces.ITicTacToeView;
+import com.dsu.tictactoe.view.interfaces.ITurnView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerManagerView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerView;
 
 public interface ViewAbstractFatory {
     public IPlayerManagerView getPlayerManagerView();

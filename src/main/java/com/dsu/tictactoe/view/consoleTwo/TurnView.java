@@ -3,9 +3,9 @@ package com.dsu.tictactoe.view.consoleTwo;
 import com.dsu.tictactoe.model.board.Mark;
 import com.dsu.tictactoe.model.board.PutMarkError;
 import com.dsu.tictactoe.utils.Console;
-import com.dsu.tictactoe.view.viewFactory.ITurnView;
+import com.dsu.tictactoe.view.interfaces.ITurnView;
 
-public class TurnView implements ITurnView {
+public class TurnView implements ITurnView{
 
     @Override
     public void playerTurn(Mark turnMark, PutMarkError putMarkError, String playerName) {
@@ -15,5 +15,5 @@ public class TurnView implements ITurnView {
             Console.printLine("Input error: "+putMarkError.getErrorDescription());
         }
     }
-
+    
 }

@@ -1,7 +1,7 @@
 package com.dsu.tictactoe.view.consoleOne.player;
 
 import com.dsu.tictactoe.model.player.PlayerType;
-import com.dsu.tictactoe.view.viewFactory.player.IPlayerView;
+import com.dsu.tictactoe.view.interfaces.player.IPlayerView;
 
 public class PlayerViewFactory {
 

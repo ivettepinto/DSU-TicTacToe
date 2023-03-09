@@ -3,7 +3,7 @@ package com.dsu.tictactoe.view.consoleOne;
 import com.dsu.tictactoe.model.board.Mark;
 import com.dsu.tictactoe.model.board.PutMarkError;
 import com.dsu.tictactoe.utils.Console;
-import com.dsu.tictactoe.view.viewFactory.ITurnView;
+import com.dsu.tictactoe.view.interfaces.ITurnView;
 
 public class TurnView implements ITurnView{
 
