@@ -1,10 +1,11 @@
 package com.dsu.tictactoe.view.consoleTwo.player;
 
 import com.dsu.tictactoe.model.player.PlayerType;
+import com.dsu.tictactoe.view.viewFactory.player.IPlayerView;
 
 public class PlayerViewFactory {
 
-    public static PlayerView getPlayerView(PlayerType playerType){
+    public static IPlayerView getPlayerView(PlayerType playerType){
         assert(playerType != null);
         switch (playerType) {
             case HUMAN:

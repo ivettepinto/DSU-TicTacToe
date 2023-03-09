@@ -9,6 +9,7 @@ import com.dsu.tictactoe.model.player.PlayerError;
 import com.dsu.tictactoe.model.player.PlayerType;
 import com.dsu.tictactoe.utils.Console;
 import com.dsu.tictactoe.view.viewFactory.player.IPlayerManagerView;
+import com.dsu.tictactoe.view.viewFactory.player.IPlayerView;
 
 public class PlayerManagerView implements IPlayerManagerView {
 
@@ -34,7 +35,7 @@ public class PlayerManagerView implements IPlayerManagerView {
             }
             playerType = PlayerType.getPlayerType(Console.readInt("Select the type: "));
         } while (playerType == null);
-        PlayerView newPlayerView = PlayerViewFactory.getPlayerView(playerType);
+        IPlayerView newPlayerView = PlayerViewFactory.getPlayerView(playerType);
         String name = newPlayerView.getName("Name for the new player: ");
 
         Player player = new Player(name);
