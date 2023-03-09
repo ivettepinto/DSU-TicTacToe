@@ -1,4 +1,4 @@
-package com.dsu.tictactoe.view.player;
+package com.dsu.tictactoe.view.consoleOne.player;
 
 import com.dsu.tictactoe.model.player.PlayerType;
 

@@ -1,4 +1,4 @@
-package com.dsu.tictactoe.view.player;
+package com.dsu.tictactoe.view.consoleOne.player;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -8,11 +8,13 @@ import com.dsu.tictactoe.model.player.Player;
 import com.dsu.tictactoe.model.player.PlayerError;
 import com.dsu.tictactoe.model.player.PlayerType;
 import com.dsu.tictactoe.utils.Console;
+import com.dsu.tictactoe.view.viewFactory.player.IPlayerManagerView;
 
-public class PlayerManagerView {
+public class PlayerManagerView implements IPlayerManagerView {
 
     
 
+    @Override
     public Player getNewPlayer(PlayerError playerError, Player newPlayer, PlayerType[] playerTypevalues) {
         if (PlayerError.NO_ERROR != playerError) {
             Console.printLine("Error: " + playerError.getDescription());
